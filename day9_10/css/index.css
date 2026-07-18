@@ -1,0 +1,398 @@
+/* 首頁内容樣式 */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/********Banner 區域 */
+.banner {
+  height: 500px;
+  background-color: #F5F5F5;
+}
+.banner .wrapper {
+  position: relative;
+  height: 500px;
+  background-color: pink;
+  overflow: hidden;
+}
+/* 圖片 */
+.banner .pic {
+  display: flex;
+  /* 因爲是flex  父級寬度不夠 子級被擠小 不想就增大父級寬度 */
+  width: 3720px;
+}
+/* 測導航 */
+.subnav {
+  /* 因爲overflow hidden所以被隱藏了 所以用position absolute 和上面加position relative */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 500px;
+  background-color:rgba(0, 0, 0, 0.42) ;
+}
+.subnav li {
+  height: 50px;
+  /* background-color: pink; */
+  line-height: 50px;
+  padding-left: 30px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+}
+.subnav li div a {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #fff;
+}
+.subnav li div .classify {
+  font-size: 16px;
+  margin-right:14px ;
+}
+.subnav ul span {
+  font-size:14px ;
+}
+.subnav ul li:hover {
+  background-color: #00BE9A;
+}
+
+/* 圓點指示器 */
+.banner ol{
+  position: absolute;
+  bottom: 17px;
+  right: 16px;
+  display: flex;
+}
+.banner ol li {
+  width: 22px;
+  height: 22px;
+  /* background-color: pink; */
+  margin-left: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.banner ol li i {
+  margin: 4px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius:  50%;
+}
+/* 選中狀態：li是半透明 i是白色 */
+.banner ol .current {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.banner ol .current i {
+  background-color: #fff;
+}
+
+/* 新鮮好物 */
+/* 標題--公共樣式 */
+.title {
+  height: 42px;
+  /* background-color: pink; */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.title .left {
+  display: flex;
+
+}
+
+.title .left h3 {
+  font-size: 30px;
+  margin-right: 35px;
+}
+.title .left p {
+  /* 令他貼著底綫 */
+  align-self: flex-end;
+  color: #A1A1A1;
+}
+.title .right .more {
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  color: #A1A1A1;
+}
+.title .right .more .material-symbols-outlined{
+  margin-left: 10px;
+}
+/* 好物内容--公共樣式 */
+.bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+.bd li {
+  width: 304px;
+  height: 404px;
+  background-color: #eef9f4;
+}
+.bd li .pic {
+  width: 304px;
+  height: 304px;
+
+}
+.bd li .txt {
+  text-align: center;
+}
+.bd li h4 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.goods .bd p {
+  font-size: 18px;
+  color: #AA2113;
+}
+.goods .bd p span {
+  margin-left:3px ;
+  font-size: 22px;
+}
+
+/* 人氣推薦 */
+.recommend .bd li {
+  background-color: #fff;
+}
+.recommend .bd p {
+  color: #A1A1A1;
+}
+
+/* 熱門品牌  */
+.brand {
+  margin-top: 60px;
+  height: 468px;
+  background-color: #F5F5F5;
+}
+.brand .wrapper {
+  overflow: hidden;
+  height: 468px;
+}
+.brand .title {
+  position: relative;
+  margin-bottom: 40px;
+}
+.brand .button {
+  right: 0;
+  bottom: -25px;
+  position: absolute;
+  display: flex;
+}
+.brand .button a {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+  line-height: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.brand .button .prev {
+  background-color: #ddd;
+}
+.brand .button .next {
+  background-color: #00BE9A;
+}
+.brand .bd li {
+  width: 244px;
+  height: 306px;
+}
+
+/* 生鮮 */
+.fresh .title {
+  margin-top:60px ;
+  margin-bottom: 20px;
+}
+.title .right {
+  display: flex;
+}
+.title .right ul {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 58px;
+}
+.title .right ul a {
+  margin-right: 6px;
+  height: 20px;
+  display: block;
+  padding: 0 7px;
+  line-height: 20px;
+}
+.title .right ul .active {
+  background-color: #00BE9A;
+  color: #fff;
+}
+/*  生鮮内容 */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content .left{
+  height: 610px;
+  width: 248px;
+  background-color: pink;
+}
+.content .right {
+  width: 968px;
+  height: 610px;
+}
+.content .right ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .right li{
+  position: relative;
+  padding: 10px 21px 0 21px;
+  width: 242px;
+  height: 305px;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.content .pic {
+  height: 180px;
+  width: 200px;
+}
+.content .info {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  height: 60px;
+  line-height: 19px;
+}
+.content .price {
+  color: #AF2F22;
+}
+.content .price span {
+  font-size: 22px;
+  margin-left: 5px;
+}
+/* 產品底部綠色區域 */
+.content li .cover {
+  position: absolute;
+  padding-top:15px ;
+  text-align: center;
+  left: 0;
+  bottom: -84px;
+  width: 242px;
+  height: 84px;
+  background-color: #00BE9A;
+  color: #fff;
+  /* 鼠標懸停彈出格子加在這裏 */
+  transition: all 0.5s;
+}
+.content .cover p:nth-child(1) {
+  font-size: 18px;
+}
+.content .cover p:nth-child(2){
+  margin: 3px auto 6px;
+  width: 128px;
+  height: 1px;
+  background-color: rgba(255,255,255,0.11);
+}
+.content .cover p:nth-child(3) {
+  font-size: 13px;
+}
+.content .cover p:nth-child(3) .material-symbols-outlined{
+  font-size:16px;
+}
+.cover .font {
+    display: flex;           /* 🌟 關鍵 1：啟動彈性盒子 */
+    align-items: center;     /* 🌟 關鍵 2：讓文字跟圖標在「垂直方向」完美對齊 */
+    justify-content: center; /* 🌟 關鍵 3：讓文字跟圖標在「水平方向」保持置中 */
+}
+/* 當鼠標懸停到li 顯示civer 改變位置 */
+.content .right li:hover .cover {
+  bottom: 0;
+}
+.content .right li:hover {
+  border: 2px solid #00BE9A;
+}
+
+/* 專題區域 */
+.topic {
+  margin-bottom: 40px;
+}
+.topic .title {
+  margin-top: 100px;
+}
+.topic-bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+.topic-bd li{
+  width: 405px;
+  height: 355px;
+}
+.topic-bd .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+}
+.topic-bd .txt {
+  width: 405px;
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  font-size: 14px; 
+  color: #666;
+}
+.topic-bd .txt .left {
+  display: flex;
+}
+.topic-bd .txt .left p {
+    margin-right: 20px;
+}
+.topic-bd .txt .left p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic-bd .txt .right p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic-bd li:nth-child(1) .txt .left p:nth-child(1) i {
+  color: #AA2113;
+}
+.topic-bd .cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 405px;
+  height: 90px;
+  background-image:linear-gradient(180deg, rgba(137,137,137,0.00) 0%,
+  rgba(0,0,0,0.90)100%) ;
+}
+.topic-bd .cover .left {
+  color: #fff;
+
+}
+.topic-bd .left h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.topic-bd .cover .right {
+  padding: 0;
+  height: 25px;
+  background-color: #fff;
+  color: #AA2113;
+  font-size: 15px;
+}
+.topic-bd .cover .right span {
+  font-size: 18px;
+}

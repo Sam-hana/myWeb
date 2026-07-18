@@ -1,0 +1,234 @@
+
+/* 頭尾各個網頁相同的樣式  */
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
+/* 快捷導航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+
+}
+.shortcut .wrapper {
+    height: 52px;
+    /* 内容放最尾 */
+    display: flex;
+    justify-content: flex-end;
+}
+.shortcut .wrapper ul {
+    display: flex;
+    line-height: 52px;
+}
+.shortcut .wrapper ul li a{
+    padding: 0 15px;
+    border-right: 1px solid #999;
+    color: #fff;
+    font-size: 14px;
+    
+}
+.shortcut .wrapper ul li:nth-child(7) a {
+    border-right: 0;
+}
+.shortcut li .material-symbols-outlined {
+    margin-right: 4px;
+    vertical-align:middle ;
+}
+.shortcut .wrapper ul li .login {
+    color: #5EB69C;
+}
+
+/**************** 頭部 */
+.header {
+    height: 88px;
+    /* background-color: pink; */
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+}
+/* logo */
+.logo {
+    /* background-color: skyblue; */
+    width: 200px;
+    height: 88px;
+    margin-right: 40px;
+}
+.logo a {
+    display: block;
+    width: 200px;
+    height: 88px;
+    /* background-image: url(../images/logo.png);
+    font-size: 0; */
+}
+/* 導航 */
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    margin-right: 47px;
+    line-height: 22px;
+    
+}
+.nav ul li a {
+    padding-bottom: 10px;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #5EB69C;
+    color: #5EB69C;
+}
+/* 搜索 */
+.search {
+    display: flex;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+    margin-top: 33px;
+    margin-right: 45px;
+}
+.search .material-symbols-outlined {
+    font-size: 20px;
+    color: #ccc;
+    margin-right: 8px;
+    padding-top: 7px;
+}
+.search input {
+    flex:1;
+    /* 清除了默認的input的寬 */
+    width: 0;
+}
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+/* 做購物車 */
+.cart {
+    margin-top:32px ;
+    position: relative;
+
+}
+.cart .material-symbols-outlined {
+    font-size: 24px;
+}
+.cart i {
+    position: absolute  ;
+    top: -5px;
+    /* 用left 不用right是因爲如果數字大 用left的話數字會往右邊撐開 */
+    left: 14px;
+    height: 15px;
+    background-color: #E26237;
+    padding:0 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFEFE;
+    line-height: 15px;
+}
+
+/*********************** 底部區域  */
+.footer {
+    height: 680px;
+    background-color: #F5F5F5;
+}
+/* 服務區域 */
+.service {
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.service li {
+    width: 190px;
+    height: 58px;
+    /* background-color: pink; */
+    display: flex;
+}
+.service li h5 {
+    background-image: url(../images/sprite.png);
+    width: 58px;
+    height: 58px;
+    margin-right: 20px;
+}
+.service li:nth-child(2) h5 {
+    background-position: 0 -58px;
+}
+.service li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+.service li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+.service li p {
+    line-height: 58px;
+    font-size: 28px;
+}
+
+/* 幫助中心 */
+.help {
+    height: 380px;
+    /* background-color: pink; */
+    display: flex;
+    padding-top: 60px;
+    justify-content:  space-between;
+}
+.help .left {
+    display: flex;
+}
+.help .left dl {
+    margin-right: 84px;
+}
+.help .left dl:nth-child(5) {
+    margin-right: 0;
+}
+.help .left dt {
+    margin-bottom: 30px;
+    font-size:18px ;
+
+}
+.help .left dd {
+    margin-bottom: 10px;
+}
+.help .left dd a {
+    font-size: 16px;
+    color: #969696;
+    display: flex;
+    align-items: center;
+}
+.help .left dd a span {
+    color: #5EB69C;
+    font-size: 18px;
+}
+.help .right ul {
+    display: flex;
+}
+.help .right li:first-child {
+    margin-right: 55px;
+}
+.help .right .pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.help .right p {
+    text-align: center;
+    color: #969696;
+}
+
+/* 版權 */
+.copyright {
+    text-align: center;
+}
+.copyright p {
+    margin-bottom: 10px;
+    color: #A1A1A1;
+
+}
+.copyright p a {
+    color: #A1A1A1;
+    margin: 0 10px ;
+}
