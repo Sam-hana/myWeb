@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學成在綫</title>
+         
+    <!-- 先link 清除默認的base.css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body>
+
+    <!-- 頭部區域 -->
+    <div class="header">
+        <div class="wrapper">
+            <!-- 有四個部分：logo 導航 搜尋 用戶 -->
+            <div class="logo">
+                <!-- logo需要 單機跳轉到首頁 也要配合搜索引擎 要包含搜索關鍵字 -->
+                <h1><a href="#">學成在綫</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="active">首頁</a></li>
+                    <li><a href="#">課程</a></li>
+                    <li><a href="#">職業規劃</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="輸入關鍵詞">
+                <a href="#"></a>
+            </div>
+            <div class="user">
+                <a href="#"> 
+                    <img src="./uploads/faebichyobi.png" alt=""> 
+                    <span> 菲比丘比</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner區域 -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <li><a href="#">前端開發</a></li>
+                    <li><a href="#">後端開發</a></li>
+                    <li><a href="#">移動開發</a></li>
+                    <li><a href="#">人工智能</a></li>
+                    <li><a href="#">商業預測</a></li>
+                    <li><a href="#">雲計算&大數據</a></li>
+                    <li><a href="#">運維￥測試</a></li>
+                    <li><a href="#">UI設計</a></li>
+                    <li><a href="#">產品</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h3>我的課程表</h3>
+                <div class="content">
+                    <dl>
+                        <dt>數據可視化課程</dt>
+                        <dd><span>正在學習</span> <strong>-echarts使用步驟</strong></dd>
+                    </dl>
+                    <dl>
+                        <dt>Vue3醫療項目課程</dt>
+                        <dd><span>正在學習</span><strong>-認識組合式API</strong></dd>
+                    </dl>
+                    <dl>
+                        <dt>React核心技術課程</dt>
+                        <dd><span>正在學習</span><strong>-rudex配合TS使用</strong></dd>
+                    </dl>
+                    <a href="#">全部課程</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 精品推薦區域 -->
+    <div class="recommend wrapper">
+        <h3>精品推薦</h3>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JaveScript</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">Ajax</a></li>
+            <li><a href="#">Vue2.0</a></li>
+            <li><a href="#">Vue3.0</a></li>
+            <li><a href="#">TypeScript</a></li>
+            <li><a href="#">React</a></li>
+        </ul>
+        <a href="#" class="modify">修改興趣</a>
+    </div>
+
+    <!-- 精品課程 -->
+    <div class="course wrapper">
+        <!-- 標題 -->
+
+        <!-- 因爲網頁有很多類似標題 用hd 下面也同樣用hd 不用重寫 -->
+        <div class="hd">
+            <h3>精品推薦</h3>
+            <a href="#" class="more">查看全部</a>
+             
+        </div>
+
+         <!-- 課程 -->
+        <div class="bd">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230251.png" alt=""></div>
+                        <div class="text">
+                            <h4>JavaScript數據看板項目實戰</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>1125</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230255.png" alt=""></div>
+                        <div class="text">
+                            <h4>Vue.js實戰--面經全端項目</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>2726</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230300.png"alt=""></div>
+                        <div class="text">
+                            <h4>玩轉Vue全家桶, iHRM人力資源項目</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>9456</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230308.png" alt=""></div>
+                        <div class="text">
+                            <h4>Vue.js 實戰醫療項目--優醫問診</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>7192</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230311.png" alt=""></div>
+                        <div class="text">
+                            <h4>小程序實戰</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>2703</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230316.png" alt=""></div>
+                        <div class="text">
+                            <h4>前端框架Flutter開發實戰</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>2841</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230320.png" alt=""></div>
+                        <div class="text">
+                            <h4>熟練使用React.js————H5項目</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>904</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230324.png" alt=""></div>
+                        <div class="text">
+                            <h4>熟練使用React.js--PC項目</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>904</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230328.png" alt=""></div>
+                        <div class="text">
+                            <h4>前端實用技術 fetchAPI實戰</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>1516</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230333.png" alt=""></div>
+                        <div class="text">
+                            <h4>前端高級node.js零基礎入門教程</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>2766</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- 前端開發工程師區域 -->
+    <div class="wrapper"> 
+        <div class="hd">
+            <h3>前端開發工程師</h3>
+            <ul>
+                <li><a href="#" class="active">熱門</a></li>
+                <li><a href="#">初級 </a></li>
+                <li><a href="#">中級</a></li>
+                <li><a href="#">高級</a></li>
+            </ul>
+            <a href="#" class="more">查看全部</a>
+             
+        </div>
+        <div class="bd">
+            <div class="left">
+                <img src="./uploads//Gemini_Generated_Image_qbo46cqbo46cqbo4.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">
+                    <img src="./uploads/螢幕擷取畫面 2026-07-18 230340.png" alt="">
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230345.png " alt=""></div>
+                                <div class="text">
+                                    <h4>JS高級·javaScript進階面向</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>101937</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230349.png" alt=""></div>
+                                <div class="text">
+                                    <h4>零基礎玩轉微信小程序</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>133781</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230355.png" alt=""></div>
+                                <div class="text">
+                                    <h4>JavaScript基礎--語法解析+項目實戰</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>8927</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 230359.png" alt=""></div>
+                                <div class="text">
+                                    <h4>前端框架Vue2+Vue3全套視頻</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>26022</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python +大數據開發-->
+    <div class="wrapper">
+        <div class="hd">
+            <h3>Python +大數據開發</h3>
+            <ul>
+                <li><a href="#" class="active">熱門</a></li>
+                <li><a href="#">初級 </a></li>
+                <li><a href="#">中級</a></li>
+                <li><a href="#">高級</a></li>
+            </ul>
+            <a href="#" class="more">查看全部</a>
+             
+        </div>
+        <div class="bd">
+            <div class="left">
+                <img src="./uploads/螢幕擷取畫面 2026-07-18 230117.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">
+                    <img src="./uploads/螢幕擷取畫面 2026-07-18 232414.png" alt="">
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232417.png " alt=""></div>
+                                <div class="text">
+                                    <h4>Django入門</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>9037</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232422.png" alt=""></div>
+                                <div class="text">
+                                    <h4>python實戰項目從0</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>88320</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232428.png" alt=""></div>
+                                <div class="text">
+                                    <h4>Python+大數據境界教程</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>8963</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232433.png" alt=""></div>
+                                <div class="text">
+                                    <h4>數據分析入門教程</h4>
+                                    <p>
+                                        <span>高級</span> -
+                                        <i>54093</i>人在學習
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--人工智能開發  -->
+    <div class="wrapper">
+        <div class="hd">
+            <h3>人工智能開發</h3>
+            <ul>
+                <li><a href="#" class="active">熱門</a></li>
+                <li><a href="#">初級 </a></li>
+                <li><a href="#">中級</a></li>
+                <li><a href="#">高級</a></li>
+            </ul>
+            <a href="#" class="more">查看全部</a>
+             
+        </div> 
+        <div class="bd ai">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232439.png" alt=""></div>
+                        <div class="text">
+                            <h4>四天快速入門python</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>83556</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232444.png" alt=""></div>
+                        <div class="text">
+                            <h4>計算機視覺入門</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>42332</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232447.png" alt=""></div>
+                        <div class="text">
+                            <h4>AI深度學習自然語言</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>33846</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232451.png" alt=""></div>
+                        <div class="text">
+                            <h4>Python進階課程-Web</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>61644</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232455.png" alt=""></div>
+                        <div class="text">
+                            <h4>AI-OpenCV</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>34922</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- JavaEE -->
+     <div class="wrapper">
+        <div class="hd">
+            <h3>JavaEE</h3>
+            <ul>
+                <li><a href="#" class="active">熱門</a></li>
+                <li><a href="#">初級 </a></li>
+                <li><a href="#">中級</a></li>
+                <li><a href="#">高級</a></li>
+            </ul>
+            <a href="#" class="more">查看全部</a>
+             
+        </div> 
+
+        <div class="bd ai">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232501.png" alt=""></div>
+                        <div class="text">
+                            <h4>   Mybatis注解開發  </h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>0</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232506.png " alt=""></div>
+                        <div class="text">
+                            <h4>詳細分析LinkedList</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>250885</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232509.png" alt=""></div>
+                        <div class="text">
+                            <h4>全面深入Mysql</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>94677</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232513.png" alt=""></div>
+                        <div class="text">
+                            <h4>RochektMQ和項目</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>47023</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="./uploads/螢幕擷取畫面 2026-07-18 232517.png" alt=""></div>
+                        <div class="text">
+                            <h4>三天系統學習ZooKeeper</h4>
+                            <p>
+                                <span>高級</span> -
+                                <i>110510</i>人在學習
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 版權區域 -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+                <p>學成力於普及中國最好的交易與一流大學機構合作提供在綫課程 @2017年XTCGInc.</p>
+                <a href="#" class="download">下載APP</a>
+
+            </div>
+
+            <div class="right">
+                <dl>
+                    <dt>合作夥伴</dt>
+                    <dd><a href="#">合作機構</a></dd>
+                    <dd><a href="#">合作導師</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="#">如何注冊</a></dd>
+                    <dd><a href="#">如何選課</a></dd>
+                    <dd><a href="#">如何拿到畢業證</a></dd>
+                    <dd><a href="#">學分是什麽</a></dd>
+                    <dd><a href="#">考試未通過怎麽辦</a></dd>
+                </dl>
+                <dl>
+                    <dt>關於學成網</dt>
+                    <dd><a href="#">關於</a></dd>
+                    <dd><a href="#">管理團隊</a></dd>
+                    <dd><a href="#">工作機會</a></dd>
+                    <dd><a href="#">客戶服務</a></dd>
+                    <dd><a href="#">幫助</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

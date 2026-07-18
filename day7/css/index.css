@@ -1,0 +1,385 @@
+/* 首頁css樣式 */
+
+/* 做版心居中 */
+.wrapper { 
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+
+/* 頭部區域 */
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+.header .wrapper {
+    display: flex;
+    padding-top: 29px;
+    
+}
+.logo a {
+    height: 41px;
+    width: 192px;
+    /* background-image: url(../day7image/logo.png); */
+    display: block;
+    /* 要隱藏字體 */
+    /* font-size: 0; */
+}
+.nav ul {
+    display: flex;
+}
+.nav {
+    margin-left: 102px;
+}
+.nav li {
+    margin-right: 24px;
+}
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+/* acitve表示默認選中的a */
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+/* 搜索 */
+.search {
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    display: flex;
+}
+.search input {
+    /* 拿父剩下的所有空間 */
+    flex: 1;
+    border: 0;
+    /* 背景色透明 transparent */
+    background-color: transparent;
+    /* 按了input這個框的時候不要有邊框綫 */
+    outline:none;
+
+}
+/* 選中placeholder 屬性文字 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+/* 父級是flex 子級是彈性盒子 加寬高生效*/
+.search a {
+    height: 16px;
+    width: 16px;
+    background-image: url(../day7image/search.png);
+    align-self: center;
+}
+/* 用戶 */
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 7px;
+    /* 垂直居中vertial-align */
+    vertical-align: middle;
+}
+.user{
+    margin-left: 32px;
+    margin-top: 4px;
+}
+.user span{
+	font-size: 16px;
+	color: #666666;
+
+}
+
+/* banner區域 */
+.banner {
+    height:420px ;
+    background-color: #15253F;
+
+}
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../uploads/Gemini_Generated_Image_bts2dnbts2dnbts2.png);
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+}
+/* 側導航區域 */
+.banner .wrapper .left {
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0,0,0, 0.42);
+    padding: 3px 20px;
+
+}
+.banner .left a {
+    display: block;
+    height: 46px;
+    background-image: url(../day7image/right.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+}
+.banner .left a:hover {
+    color: #00a4ff;
+    background-image: url(../day7image/right-hover.png);
+}
+
+/* 我的課程區域 */
+.banner .right {
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    margin-top: 60px;
+    border-radius:10px ;
+}
+.banner .right h3 {
+    height: 48px;
+    margin-left: 14px;
+    line-height: 48px;
+    font-size:15px ;
+    color: #fff;
+    font-weight: normal;
+}
+.banner .right div {
+    
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 14px;
+
+}
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0 ;
+    
+}
+.banner .right dt {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.banner .right dd {
+    font-size:12px;
+    line-height:16px ;
+    margin-bottom: 8px;
+}
+.banner .right dd span {
+    color: #00a4ff;
+}
+.banner .right dd strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+.banner .right a {
+    display: block;
+    height: 32px;
+    background-color: #00a4ff;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+    color:#fff ;
+    font-size: 14px;
+}
+/* 精品推薦 */
+.recommend {
+    height: 60px;
+    box-shadow: 0px 1px 2px 0px 
+		rgba(211, 211, 211, 0.5);
+    margin-top: 11px;
+    padding: 0px 20px;
+    line-height: 60px;
+    display: flex;
+}
+.recommend h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00a4ff;
+}
+.recommend ul {
+    flex: 1;
+    display: flex;
+    
+}
+.recommend ul li a{
+    padding: 0 24px;
+    font-size: 18px;
+    border-right: 1px solid #e0e0e0;
+}
+.recommend ul li:nth-child(9) a {
+    border-right: 0 ;
+}
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* 精品區域 */
+.course {
+    margin-top: 16px;
+}
+
+/* 標題 是公用類 */
+.hd {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+.hd .more {
+    background-image: url(../day7image/more.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999;
+}
+/* 課程内容 也是公共類 */
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}  
+.bd li {
+    height: 271px;
+    width: 228px;
+    background-color: pink;
+    margin-bottom: 14px;
+}
+.bd li .pic {
+    height: 156px;
+}
+.bd li .pic img {
+    width: 228px;
+    height: 156px;
+}
+.bd li .text {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+.bd li .text h4 {
+    height: 40px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.bd li .text p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.bd li .text p span {
+    color:#f16400 ;
+}
+.bd li .text p i {
+    font-style: normal;
+}
+
+/* 前端 */
+.hd ul {
+    display: flex;
+}
+.hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+.hd li .active{
+    color: #00a4ff;
+}
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+.bd .left {
+    width: 228px;
+    
+}
+.bd .left img {
+    width: 228px;
+    height: 386px;
+}
+.bd .right {
+    width: 957px;
+}
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
+.bd .right .top img {
+    width: 957px;
+    height: 100px;
+}
+/* 人工智能 */
+.ai ul {
+    width: 1200px;
+}
+
+/* 版權區域 */
+.footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    height: 273px;
+    background-color: #fff;
+} 
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .wrapper .left {
+    width: 432px;
+    height: 148px;
+}
+.footer .wrapper .left p {
+    margin-top :24px;
+    margin-bottom: 14px;
+    font-size:12px;
+    line-height: 17px;
+    color: #666;
+}
+.footer .wrapper .left .download {
+    display: block;
+    height: 36px;
+    width: 120px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    line-height: 34px;
+    color: #00a4ff;
+    text-align: center;
+}
+.footer .right  {
+    display: flex;
+}
+.footer .right dl {
+    margin-left:130px ;
+}
+.footer .right dt {
+    font-size: 16px;
+    margin-bottom:12px ;
+    line-height: 23px;
+}
+.footer .right a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
